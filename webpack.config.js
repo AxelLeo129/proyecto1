@@ -23,8 +23,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        test: /\.(scss|less|css)$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         test: /\.m?js$/,
@@ -37,7 +37,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpe?g|gif|mp4|webp)$/i,
+        test: /\.(png|jpe?g|gif|mp4|webp|svg)$/i,
         loader: 'file-loader',
         options: {
           outputPath: 'images',

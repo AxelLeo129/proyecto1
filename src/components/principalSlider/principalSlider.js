@@ -82,6 +82,7 @@ const PrincipalSlider = (props) => {
             <div
               key={index}
               onClick={() => selectSlider(e.id)}
+              style={{cursor: 'pointer'}}
               className={`card--size--1 d-flex justify-content-center align-items-center animate__animated animate__fadeIn ${e.selected_class}`}
             >
               <img

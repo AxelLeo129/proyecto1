@@ -84,6 +84,7 @@ const Accesorios = (props) => {
           {cards.map((e, index) => (
             <div
               key={index}
+              style={{cursor: 'pointer'}}
               onClick={() => selectSlider(e.id)}
               className={`card--size--2 d-flex justify-content-center align-items-center text-center animate__animated animate__fadeIn ${e.selected_class}`}
             >

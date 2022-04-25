@@ -15664,6 +15664,40 @@ h3 {
 .ml--55 {
   margin-left: 55px;
 }
+/*!**************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/month/month.scss ***!
+  \**************************************************************************************************************************/
+.mt--9 {
+  margin-top: 40px;
+}
+
+.text--middle h2 {
+  width: 50%;
+}
+
+.text--middle p {
+  width: 50%;
+}
+
+.mb {
+  margin: 5px;
+  margin-bottom: 35px;
+}
+
+.img--div {
+  width: 415px;
+  height: 235px;
+  border-radius: 10px;
+}
+
+.mb p {
+  color: white;
+}
+
+.img--div:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
 /*!********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.css ***!
   \********************************************************************************************************/

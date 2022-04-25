@@ -6,6 +6,7 @@ import Header from "./header/header";
 import PrincipalSlider from "./principalSlider/principalSlider";
 import Accesorios from "./accesorios/accesorios";
 import Month from "./month/month";
+import ElderRing from "./elder-ring/elderRing";
 
 class StartApp extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class StartApp extends React.Component {
         <PrincipalSlider />
         <Accesorios />
         <Month />
+        <ElderRing />
       </React.Fragment>
     );
   }

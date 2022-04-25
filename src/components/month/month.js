@@ -23,7 +23,7 @@ const Month = (props) => {
             </div>
           </div>
         </div>
-        <div className="row mt-4 mb-4">
+        <div className="row mt-4">
           <div className="col-12 d-flex justify-content-center">
             <div className="mb">
               <img src={mlb_cover_2} className="img--div"/>

@@ -197,7 +197,7 @@ export const principal_sliders = [
     logo: mlb_logo,
     title: "Own The Show™",
     text: "Every pitch. Every hit. Every win. Make your mark and Own The Show in MLB® The Show™ 22, out now on PS4 & PS5",
-    top: "30%",
+    top: "-75%",
   },
   {
     id: 2,
@@ -205,7 +205,7 @@ export const principal_sliders = [
     logo: lego_logo,
     title: "All nine films. One new game.",
     text: "Play through all nine Star Wars saga films in a brand-new LEGO video game unlike any other, out now on PS4 & PS5",
-    top: "25%",
+    top: "-80%",
   },
   {
     id: 3,
@@ -213,7 +213,7 @@ export const principal_sliders = [
     logo: horizon_logo,
     title: "Rise above our ruin",
     text: "Join Aloy as she braves the Forbidden West - a majestic but dangerous frontier that conceals mysterious new threats.",
-    top: "25%",
+    top: "-80%",
   },
   {
     id: 4,
@@ -221,7 +221,7 @@ export const principal_sliders = [
     logo: gran_turismo_logo,
     title: "Find your line",
     text: "Gran Turismo 7 builds on generations of racing sim experience to bring you the best features from the history of the franchise.",
-    top: "10%",
+    top: "-105%",
   },
   {
     id: 5,
@@ -229,7 +229,7 @@ export const principal_sliders = [
     logo: ghostwire_logo,
     title: "Face the unknown",
     text: "Experience the mysterious events within Tango Gameworks’ highly anticipated action-adventure game, Ghostwire: Tokyo, out now on PS5",
-    top: "30%",
+    top: "-75%",
   },
 ];
 

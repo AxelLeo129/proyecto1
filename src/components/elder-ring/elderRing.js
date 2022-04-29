@@ -14,7 +14,7 @@ const ElderRing = (props) => {
         />
         <div
           className="animate__animated animate__fadeInUp slider--global"
-          style={{ top: "335%" }}
+          style={{ top: "-75%" }}
         >
           <img src={elder_ring_logo} width="50%" height="50%" />
           <h3>Become the Elden Lord</h3>

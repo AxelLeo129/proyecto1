@@ -97,6 +97,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/products/products.js":
+/*!*********************************************!*\
+  !*** ./src/components/products/products.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _products_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./products.scss */ \"./src/components/products/products.scss\");\n/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ \"./node_modules/@fortawesome/free-solid-svg-icons/index.es.js\");\n/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ \"./node_modules/@fortawesome/react-fontawesome/index.es.js\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== \"undefined\" && arr[Symbol.iterator] || arr[\"@@iterator\"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\nvar Products = function Products(props) {\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(props.products[0]),\n      _useState2 = _slicedToArray(_useState, 2),\n      products1 = _useState2[0],\n      setProducts1 = _useState2[1];\n\n  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),\n      _useState4 = _slicedToArray(_useState3, 2),\n      dot_selected = _useState4[0],\n      setDotSelected = _useState4[1];\n\n  var selectProducts = function selectProducts(dot) {\n    var validate = true;\n\n    if (dot_selected == 0) {\n      if (dot < dot_selected) {\n        validate = false;\n      }\n    }\n\n    if (dot_selected == 2) {\n      if (dot > dot_selected) {\n        validate = false;\n      }\n    }\n\n    if (validate) {\n      setProducts1([]);\n      setTimeout(function () {\n        setProducts1(props.products[dot]);\n        setDotSelected(dot);\n      }, 100);\n    }\n  };\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"back--dark--1\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"row\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"col-6\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"m-5 text-light\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h3\", null, props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h5\", null, props.desc))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"col-6 \"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"m-5 flex--1\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"mr--150\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", {\n    className: \"dot \".concat(dot_selected == 0 ? \"dot--selected\" : null),\n    \"dot--selected\": true,\n    onClick: function onClick() {\n      return selectProducts(0);\n    }\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", {\n    className: \"dot \".concat(dot_selected == 1 ? \"dot--selected\" : null),\n    onClick: function onClick() {\n      return selectProducts(1);\n    }\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", {\n    className: \"dot \".concat(dot_selected == 2 ? \"dot--selected\" : null),\n    onClick: function onClick() {\n      return selectProducts(2);\n    }\n  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"mr--15\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__.FontAwesomeIcon, {\n    onClick: function onClick() {\n      return selectProducts(dot_selected - 1);\n    },\n    color: \"white\",\n    style: {\n      fontSize: \"30px\",\n      margin: \"5px\"\n    },\n    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faChevronCircleLeft\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__.FontAwesomeIcon, {\n    onClick: function onClick() {\n      return selectProducts(dot_selected + 1);\n    },\n    style: {\n      fontSize: \"30px\",\n      margin: \"5px\"\n    },\n    color: \"white\",\n    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faChevronCircleRight\n  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"row\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"col-12\",\n    style: {\n      display: \"flex\",\n      marginLeft: \"25px\"\n    }\n  }, products1.map(function (e, i) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      key: i,\n      className: \"card--size--1 d-flex align-items-center animate__animated animate__fadeIn\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n      src: e.img,\n      alt: \"Card image cap\",\n      style: {\n        minHeight: \"200px\",\n        minWidth: \"200px\",\n        maxHeight: \"200px\",\n        maxWidth: \"200px\"\n      },\n      className: \"zoom\"\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      className: \"card-body\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", {\n      className: \"card-text text-light\"\n    }, e.name)));\n  }))))));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Products);\n\n//# sourceURL=webpack://proyecto1/./src/components/products/products.js?");
+
+/***/ }),
+
 /***/ "./src/components/startApp.js":
 /*!************************************!*\
   !*** ./src/components/startApp.js ***!
@@ -104,7 +115,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ \"./node_modules/bootstrap/dist/css/bootstrap.css\");\n/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! animate.css */ \"./node_modules/animate.css/animate.css\");\n/* harmony import */ var _startApp_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./startApp.scss */ \"./src/components/startApp.scss\");\n/* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./header/header */ \"./src/components/header/header.js\");\n/* harmony import */ var _principalSlider_principalSlider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./principalSlider/principalSlider */ \"./src/components/principalSlider/principalSlider.js\");\n/* harmony import */ var _accesorios_accesorios__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./accesorios/accesorios */ \"./src/components/accesorios/accesorios.js\");\n/* harmony import */ var _month_month__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./month/month */ \"./src/components/month/month.js\");\n/* harmony import */ var _elder_ring_elderRing__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./elder-ring/elderRing */ \"./src/components/elder-ring/elderRing.js\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && \"function\" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }, _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, \"prototype\", { writable: false }); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, \"prototype\", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } else if (call !== void 0) { throw new TypeError(\"Derived constructors may only return object or undefined\"); } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n\n\n\n\n\n\n\n\n\n\nvar StartApp = /*#__PURE__*/function (_React$Component) {\n  _inherits(StartApp, _React$Component);\n\n  var _super = _createSuper(StartApp);\n\n  function StartApp() {\n    _classCallCheck(this, StartApp);\n\n    return _super.apply(this, arguments);\n  }\n\n  _createClass(StartApp, [{\n    key: \"render\",\n    value: function render() {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_header_header__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_principalSlider_principalSlider__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_accesorios_accesorios__WEBPACK_IMPORTED_MODULE_6__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_month_month__WEBPACK_IMPORTED_MODULE_7__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_elder_ring_elderRing__WEBPACK_IMPORTED_MODULE_8__[\"default\"], null));\n    }\n  }]);\n\n  return StartApp;\n}((react__WEBPACK_IMPORTED_MODULE_0___default().Component));\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StartApp);\n\n//# sourceURL=webpack://proyecto1/./src/components/startApp.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ \"./node_modules/bootstrap/dist/css/bootstrap.css\");\n/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! animate.css */ \"./node_modules/animate.css/animate.css\");\n/* harmony import */ var _startApp_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./startApp.scss */ \"./src/components/startApp.scss\");\n/* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./header/header */ \"./src/components/header/header.js\");\n/* harmony import */ var _principalSlider_principalSlider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./principalSlider/principalSlider */ \"./src/components/principalSlider/principalSlider.js\");\n/* harmony import */ var _accesorios_accesorios__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./accesorios/accesorios */ \"./src/components/accesorios/accesorios.js\");\n/* harmony import */ var _month_month__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./month/month */ \"./src/components/month/month.js\");\n/* harmony import */ var _elder_ring_elderRing__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./elder-ring/elderRing */ \"./src/components/elder-ring/elderRing.js\");\n/* harmony import */ var _products_products__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./products/products */ \"./src/components/products/products.js\");\n/* harmony import */ var _utilities_constants__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./utilities/constants */ \"./src/components/utilities/constants.js\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && \"function\" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }, _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, \"prototype\", { writable: false }); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, \"prototype\", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } else if (call !== void 0) { throw new TypeError(\"Derived constructors may only return object or undefined\"); } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar StartApp = /*#__PURE__*/function (_React$Component) {\n  _inherits(StartApp, _React$Component);\n\n  var _super = _createSuper(StartApp);\n\n  function StartApp() {\n    _classCallCheck(this, StartApp);\n\n    return _super.apply(this, arguments);\n  }\n\n  _createClass(StartApp, [{\n    key: \"render\",\n    value: function render() {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_header_header__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_principalSlider_principalSlider__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_accesorios_accesorios__WEBPACK_IMPORTED_MODULE_6__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_month_month__WEBPACK_IMPORTED_MODULE_7__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_elder_ring_elderRing__WEBPACK_IMPORTED_MODULE_8__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_products_products__WEBPACK_IMPORTED_MODULE_9__[\"default\"], {\n        products: _utilities_constants__WEBPACK_IMPORTED_MODULE_10__.products1,\n        title: \"New releases\",\n        desc: \"Great PS5 and PS4 games available now\"\n      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_products_products__WEBPACK_IMPORTED_MODULE_9__[\"default\"], {\n        products: _utilities_constants__WEBPACK_IMPORTED_MODULE_10__.products2,\n        title: \"Coming soon\",\n        desc: \"Amazing new experiences are just around the corner\"\n      }));\n    }\n  }]);\n\n  return StartApp;\n}((react__WEBPACK_IMPORTED_MODULE_0___default().Component));\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StartApp);\n\n//# sourceURL=webpack://proyecto1/./src/components/startApp.js?");
 
 /***/ }),
 
@@ -115,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"accesories_slider\": () => (/* binding */ accesories_slider),\n/* harmony export */   \"header_options\": () => (/* binding */ header_options),\n/* harmony export */   \"principal_sliders\": () => (/* binding */ principal_sliders)\n/* harmony export */ });\n/* harmony import */ var _assets_ps5_logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/ps5_logo.png */ \"./src/assets/ps5_logo.png\");\n/* harmony import */ var _assets_ps4_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/ps4_logo.png */ \"./src/assets/ps4_logo.png\");\n/* harmony import */ var _assets_psvr_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/psvr_logo.png */ \"./src/assets/psvr_logo.png\");\n/* harmony import */ var _assets_psplus_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/psplus_logo.png */ \"./src/assets/psplus_logo.png\");\n/* harmony import */ var _assets_psnow_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/psnow_logo.png */ \"./src/assets/psnow_logo.png\");\n/* harmony import */ var _assets_buy_games_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/buy_games.png */ \"./src/assets/buy_games.png\");\n/* harmony import */ var _assets_ps4pro_logo_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/ps4pro_logo.png */ \"./src/assets/ps4pro_logo.png\");\n/* harmony import */ var _assets_ps_blog_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/ps_blog.png */ \"./src/assets/ps_blog.png\");\n/* harmony import */ var _assets_ps_calendar_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/ps_calendar.png */ \"./src/assets/ps_calendar.png\");\n/* harmony import */ var _assets_ps_merchandise_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/ps_merchandise.png */ \"./src/assets/ps_merchandise.png\");\n/* harmony import */ var _assets_ps_support_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/ps_support.png */ \"./src/assets/ps_support.png\");\n/* harmony import */ var _assets_ps_home_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/ps_home.png */ \"./src/assets/ps_home.png\");\n/* harmony import */ var _assets_mlb_the_show_22_webp__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/mlb-the-show-22.webp */ \"./src/assets/mlb-the-show-22.webp\");\n/* harmony import */ var _assets_mlb_the_show_22_logo_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../assets/mlb-the-show-22-logo.png */ \"./src/assets/mlb-the-show-22-logo.png\");\n/* harmony import */ var _assets_lego_webp__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../assets/lego.webp */ \"./src/assets/lego.webp\");\n/* harmony import */ var _assets_lego_logo_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../assets/lego-logo.png */ \"./src/assets/lego-logo.png\");\n/* harmony import */ var _assets_horizon_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../assets/horizon.jpg */ \"./src/assets/horizon.jpg\");\n/* harmony import */ var _assets_horizon_logo_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../assets/horizon-logo.png */ \"./src/assets/horizon-logo.png\");\n/* harmony import */ var _assets_gran_turismo_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../assets/gran-turismo.jpg */ \"./src/assets/gran-turismo.jpg\");\n/* harmony import */ var _assets_gran_turismo_logo_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../assets/gran-turismo-logo.png */ \"./src/assets/gran-turismo-logo.png\");\n/* harmony import */ var _assets_ghostwire_webp__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../assets/ghostwire.webp */ \"./src/assets/ghostwire.webp\");\n/* harmony import */ var _assets_ghostwire_logo_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../assets/ghostwire-logo.png */ \"./src/assets/ghostwire-logo.png\");\n/* harmony import */ var _assets_ps5_back_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../../assets/ps5-back.png */ \"./src/assets/ps5-back.png\");\n/* harmony import */ var _assets_dualsense_back_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../../assets/dualsense_back.jpg */ \"./src/assets/dualsense_back.jpg\");\n/* harmony import */ var _assets_pulse3d_back_jpg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../../assets/pulse3d_back.jpg */ \"./src/assets/pulse3d_back.jpg\");\n/* harmony import */ var _assets_media_remote_back_png__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../../assets/media_remote_back.png */ \"./src/assets/media_remote_back.png\");\n/* harmony import */ var _assets_hd_camera_back_jpg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../../assets/hd_camera_back.jpg */ \"./src/assets/hd_camera_back.jpg\");\n/* harmony import */ var _assets_ps5_covers_back_jpg__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../../assets/ps5_covers_back.jpg */ \"./src/assets/ps5_covers_back.jpg\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar header_options = [{\n  name: \"Games\",\n  cards: [{\n    img: _assets_ps5_logo_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n    title: \"PS5\"\n  }, {\n    img: _assets_ps4_logo_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n    title: \"PS4\"\n  }, {\n    img: _assets_psvr_logo_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n    title: \"PS VR\"\n  }, {\n    img: _assets_psplus_logo_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n    title: \"PS Plus\"\n  }, {\n    img: _assets_psnow_logo_png__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n    title: \"PS Now\"\n  }, {\n    img: _assets_buy_games_png__WEBPACK_IMPORTED_MODULE_5__[\"default\"],\n    title: \"Buy Games\"\n  }],\n  li: [\"PlayStation Indies\", \"PS4 games on PS5\", \"Free to Play\", \"Deals & offers\"]\n}, {\n  name: \"Hardware\",\n  cards: [{\n    img: _assets_ps5_logo_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n    title: \"PS5\"\n  }, {\n    img: _assets_ps4_logo_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n    title: \"PS4\"\n  }, {\n    img: _assets_ps4pro_logo_png__WEBPACK_IMPORTED_MODULE_6__[\"default\"],\n    title: \"PS4 Pro\"\n  }, {\n    img: _assets_psvr_logo_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n    title: \"PS VR\"\n  }],\n  li: [\"DualSense wireless controller\", \"Pulse 3D headset\", \"PS5 accessories\", \"PlayStation VR2\", \"PS4 accessories\"]\n}, {\n  name: \"Services\",\n  cards: [{\n    img: _assets_psplus_logo_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n    title: \"PS Plus\"\n  }, {\n    img: _assets_psnow_logo_png__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n    title: \"PS Now\"\n  }],\n  li: [\"PS5 entertainment\", \"PS4 entertainment\"]\n}, {\n  name: \"News\",\n  cards: [{\n    img: _assets_ps_blog_png__WEBPACK_IMPORTED_MODULE_7__[\"default\"],\n    title: \"PS Blog\"\n  }, {\n    img: _assets_ps_calendar_png__WEBPACK_IMPORTED_MODULE_8__[\"default\"],\n    title: \"This Month on PlayStation\"\n  }],\n  li: [\"Competition Center\", \"Accessibility\"]\n}, {\n  name: \"Shop\",\n  cards: [{\n    img: _assets_ps4pro_logo_png__WEBPACK_IMPORTED_MODULE_6__[\"default\"],\n    title: \"Hardware and Discs\"\n  }, {\n    img: _assets_buy_games_png__WEBPACK_IMPORTED_MODULE_5__[\"default\"],\n    title: \"Digital Games and Services\"\n  }, {\n    img: _assets_ps_merchandise_png__WEBPACK_IMPORTED_MODULE_9__[\"default\"],\n    title: \"Official Merchandise\"\n  }],\n  li: [\"Buy PS5 games\", \"Buy PS4 games\", \"Buy PlayStation Plus\", \"Buy PS4\", \"Buy PS VR\"]\n}, {\n  name: \"Support\",\n  cards: [{\n    img: _assets_ps_support_png__WEBPACK_IMPORTED_MODULE_10__[\"default\"],\n    title: \"Support\"\n  }, {\n    img: _assets_ps_home_png__WEBPACK_IMPORTED_MODULE_11__[\"default\"],\n    title: \"PSN Status\"\n  }],\n  li: []\n}];\nvar principal_sliders = [{\n  id: 1,\n  banner: _assets_mlb_the_show_22_webp__WEBPACK_IMPORTED_MODULE_12__[\"default\"],\n  logo: _assets_mlb_the_show_22_logo_png__WEBPACK_IMPORTED_MODULE_13__[\"default\"],\n  title: \"Own The Show™\",\n  text: \"Every pitch. Every hit. Every win. Make your mark and Own The Show in MLB® The Show™ 22, out now on PS4 & PS5\",\n  top: \"30%\"\n}, {\n  id: 2,\n  banner: _assets_lego_webp__WEBPACK_IMPORTED_MODULE_14__[\"default\"],\n  logo: _assets_lego_logo_png__WEBPACK_IMPORTED_MODULE_15__[\"default\"],\n  title: \"All nine films. One new game.\",\n  text: \"Play through all nine Star Wars saga films in a brand-new LEGO video game unlike any other, out now on PS4 & PS5\",\n  top: \"25%\"\n}, {\n  id: 3,\n  banner: _assets_horizon_jpg__WEBPACK_IMPORTED_MODULE_16__[\"default\"],\n  logo: _assets_horizon_logo_png__WEBPACK_IMPORTED_MODULE_17__[\"default\"],\n  title: \"Rise above our ruin\",\n  text: \"Join Aloy as she braves the Forbidden West - a majestic but dangerous frontier that conceals mysterious new threats.\",\n  top: \"25%\"\n}, {\n  id: 4,\n  banner: _assets_gran_turismo_jpg__WEBPACK_IMPORTED_MODULE_18__[\"default\"],\n  logo: _assets_gran_turismo_logo_png__WEBPACK_IMPORTED_MODULE_19__[\"default\"],\n  title: \"Find your line\",\n  text: \"Gran Turismo 7 builds on generations of racing sim experience to bring you the best features from the history of the franchise.\",\n  top: \"10%\"\n}, {\n  id: 5,\n  banner: _assets_ghostwire_webp__WEBPACK_IMPORTED_MODULE_20__[\"default\"],\n  logo: _assets_ghostwire_logo_png__WEBPACK_IMPORTED_MODULE_21__[\"default\"],\n  title: \"Face the unknown\",\n  text: \"Experience the mysterious events within Tango Gameworks’ highly anticipated action-adventure game, Ghostwire: Tokyo, out now on PS5\",\n  top: \"30%\"\n}];\nvar accesories_slider = [{\n  id: 1,\n  banner: _assets_ps5_back_png__WEBPACK_IMPORTED_MODULE_22__[\"default\"],\n  title: \"PlayStation 5 Console\",\n  text: \"Experience an all-new generation of incredible PlayStation games.\"\n}, {\n  id: 2,\n  banner: _assets_dualsense_back_jpg__WEBPACK_IMPORTED_MODULE_23__[\"default\"],\n  title: \"DualSense™ Wireless Controller\",\n  text: \"Immerse yourself in the gaming experience with a controller the supports responsive haptic feedback and dynamic trigger effects.\"\n}, {\n  id: 3,\n  banner: _assets_pulse3d_back_jpg__WEBPACK_IMPORTED_MODULE_24__[\"default\"],\n  title: \"PULSE 3D™ Wireless Headset\",\n  text: \"Enjoy a seamless wireless experience with a headset fine-tuned for 3D Audio on PS5 consoles.\"\n}, {\n  id: 4,\n  banner: _assets_media_remote_back_png__WEBPACK_IMPORTED_MODULE_25__[\"default\"],\n  title: \"Media Remote\",\n  text: \"Conveniently control movies, streaming services and more on your PS5 console with an intuitive layout.\"\n}, {\n  id: 5,\n  banner: _assets_hd_camera_back_jpg__WEBPACK_IMPORTED_MODULE_26__[\"default\"],\n  title: \"HD Camera\",\n  text: \"Add yourself to your gameplay videos and broadcasts with smooth, sharp, full-HD capture.\"\n}, {\n  id: 6,\n  banner: _assets_ps5_covers_back_jpg__WEBPACK_IMPORTED_MODULE_27__[\"default\"],\n  title: \"PS5 Console Covers\",\n  text: \"Personalise your PlayStation 5 or PlayStation 5 Digital Edition console with a vibrant array of new colour options.*\"\n}];\n\n//# sourceURL=webpack://proyecto1/./src/components/utilities/constants.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"accesories_slider\": () => (/* binding */ accesories_slider),\n/* harmony export */   \"header_options\": () => (/* binding */ header_options),\n/* harmony export */   \"principal_sliders\": () => (/* binding */ principal_sliders),\n/* harmony export */   \"products1\": () => (/* binding */ products1),\n/* harmony export */   \"products2\": () => (/* binding */ products2)\n/* harmony export */ });\n/* harmony import */ var _assets_ps5_logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/ps5_logo.png */ \"./src/assets/ps5_logo.png\");\n/* harmony import */ var _assets_ps4_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/ps4_logo.png */ \"./src/assets/ps4_logo.png\");\n/* harmony import */ var _assets_psvr_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/psvr_logo.png */ \"./src/assets/psvr_logo.png\");\n/* harmony import */ var _assets_psplus_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/psplus_logo.png */ \"./src/assets/psplus_logo.png\");\n/* harmony import */ var _assets_psnow_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/psnow_logo.png */ \"./src/assets/psnow_logo.png\");\n/* harmony import */ var _assets_buy_games_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/buy_games.png */ \"./src/assets/buy_games.png\");\n/* harmony import */ var _assets_ps4pro_logo_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/ps4pro_logo.png */ \"./src/assets/ps4pro_logo.png\");\n/* harmony import */ var _assets_ps_blog_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/ps_blog.png */ \"./src/assets/ps_blog.png\");\n/* harmony import */ var _assets_ps_calendar_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/ps_calendar.png */ \"./src/assets/ps_calendar.png\");\n/* harmony import */ var _assets_ps_merchandise_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/ps_merchandise.png */ \"./src/assets/ps_merchandise.png\");\n/* harmony import */ var _assets_ps_support_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/ps_support.png */ \"./src/assets/ps_support.png\");\n/* harmony import */ var _assets_ps_home_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/ps_home.png */ \"./src/assets/ps_home.png\");\n/* harmony import */ var _assets_mlb_the_show_22_webp__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/mlb-the-show-22.webp */ \"./src/assets/mlb-the-show-22.webp\");\n/* harmony import */ var _assets_mlb_the_show_22_logo_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../assets/mlb-the-show-22-logo.png */ \"./src/assets/mlb-the-show-22-logo.png\");\n/* harmony import */ var _assets_lego_webp__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../assets/lego.webp */ \"./src/assets/lego.webp\");\n/* harmony import */ var _assets_lego_logo_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../assets/lego-logo.png */ \"./src/assets/lego-logo.png\");\n/* harmony import */ var _assets_horizon_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../assets/horizon.jpg */ \"./src/assets/horizon.jpg\");\n/* harmony import */ var _assets_horizon_logo_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../assets/horizon-logo.png */ \"./src/assets/horizon-logo.png\");\n/* harmony import */ var _assets_gran_turismo_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../assets/gran-turismo.jpg */ \"./src/assets/gran-turismo.jpg\");\n/* harmony import */ var _assets_gran_turismo_logo_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../assets/gran-turismo-logo.png */ \"./src/assets/gran-turismo-logo.png\");\n/* harmony import */ var _assets_ghostwire_webp__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../assets/ghostwire.webp */ \"./src/assets/ghostwire.webp\");\n/* harmony import */ var _assets_ghostwire_logo_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../assets/ghostwire-logo.png */ \"./src/assets/ghostwire-logo.png\");\n/* harmony import */ var _assets_ps5_back_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../../assets/ps5-back.png */ \"./src/assets/ps5-back.png\");\n/* harmony import */ var _assets_dualsense_back_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../../assets/dualsense_back.jpg */ \"./src/assets/dualsense_back.jpg\");\n/* harmony import */ var _assets_pulse3d_back_jpg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../../assets/pulse3d_back.jpg */ \"./src/assets/pulse3d_back.jpg\");\n/* harmony import */ var _assets_media_remote_back_png__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../../assets/media_remote_back.png */ \"./src/assets/media_remote_back.png\");\n/* harmony import */ var _assets_hd_camera_back_jpg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../../assets/hd_camera_back.jpg */ \"./src/assets/hd_camera_back.jpg\");\n/* harmony import */ var _assets_ps5_covers_back_jpg__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../../assets/ps5_covers_back.jpg */ \"./src/assets/ps5_covers_back.jpg\");\n/* harmony import */ var _assets_horizon_sm_jpg__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../../assets/horizon-sm.jpg */ \"./src/assets/horizon-sm.jpg\");\n/* harmony import */ var _assets_deathloop_sm_jpg__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../../assets/deathloop-sm.jpg */ \"./src/assets/deathloop-sm.jpg\");\n/* harmony import */ var _assets_dying_sm_jpg__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../../assets/dying-sm.jpg */ \"./src/assets/dying-sm.jpg\");\n/* harmony import */ var _assets_elden_sm_jpg__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../../assets/elden-sm.jpg */ \"./src/assets/elden-sm.jpg\");\n/* harmony import */ var _assets_fifa_sm_jpg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../../assets/fifa-sm.jpg */ \"./src/assets/fifa-sm.jpg\");\n/* harmony import */ var _assets_forspoken_sm_jpg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../../assets/forspoken-sm.jpg */ \"./src/assets/forspoken-sm.jpg\");\n/* harmony import */ var _assets_ghostwire_sm_jpg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../../assets/ghostwire-sm.jpg */ \"./src/assets/ghostwire-sm.jpg\");\n/* harmony import */ var _assets_god_sm_jpg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../../assets/god-sm.jpg */ \"./src/assets/god-sm.jpg\");\n/* harmony import */ var _assets_gotham_sm_jpg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../assets/gotham-sm.jpg */ \"./src/assets/gotham-sm.jpg\");\n/* harmony import */ var _assets_gran_sm_jpg__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../assets/gran-sm.jpg */ \"./src/assets/gran-sm.jpg\");\n/* harmony import */ var _assets_hogwarts_sm_jpg__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../assets/hogwarts-sm.jpg */ \"./src/assets/hogwarts-sm.jpg\");\n/* harmony import */ var _assets_lego_sm_jpg__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../assets/lego-sm.jpg */ \"./src/assets/lego-sm.jpg\");\n/* harmony import */ var _assets_little_sm_jpg__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../assets/little-sm.jpg */ \"./src/assets/little-sm.jpg\");\n/* harmony import */ var _assets_oxenfree_sm_jpg__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../assets/oxenfree-sm.jpg */ \"./src/assets/oxenfree-sm.jpg\");\n/* harmony import */ var _assets_saints_sm_jpg__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../../assets/saints-sm.jpg */ \"./src/assets/saints-sm.jpg\");\n/* harmony import */ var _assets_salt_sm_jpg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../../assets/salt-sm.jpg */ \"./src/assets/salt-sm.jpg\");\n/* harmony import */ var _assets_sifu_sm_jpg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../../assets/sifu-sm.jpg */ \"./src/assets/sifu-sm.jpg\");\n/* harmony import */ var _assets_stranger_sm_jpg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../../assets/stranger-sm.jpg */ \"./src/assets/stranger-sm.jpg\");\n/* harmony import */ var _assets_stray_sm_jpg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../../assets/stray-sm.jpg */ \"./src/assets/stray-sm.jpg\");\n/* harmony import */ var _assets_suicide_sm_jpg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../../assets/suicide-sm.jpg */ \"./src/assets/suicide-sm.jpg\");\n/* harmony import */ var _assets_tiny_sm_jpg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../../assets/tiny-sm.jpg */ \"./src/assets/tiny-sm.jpg\");\n/* harmony import */ var _assets_tmnt_sm_jpg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../../assets/tmnt-sm.jpg */ \"./src/assets/tmnt-sm.jpg\");\n/* harmony import */ var _assets_trek_sm_jpg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../../assets/trek-sm.jpg */ \"./src/assets/trek-sm.jpg\");\n/* harmony import */ var _assets_uncharted_sm_jpg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ../../assets/uncharted-sm.jpg */ \"./src/assets/uncharted-sm.jpg\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar header_options = [{\n  name: \"Games\",\n  cards: [{\n    img: _assets_ps5_logo_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n    title: \"PS5\"\n  }, {\n    img: _assets_ps4_logo_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n    title: \"PS4\"\n  }, {\n    img: _assets_psvr_logo_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n    title: \"PS VR\"\n  }, {\n    img: _assets_psplus_logo_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n    title: \"PS Plus\"\n  }, {\n    img: _assets_psnow_logo_png__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n    title: \"PS Now\"\n  }, {\n    img: _assets_buy_games_png__WEBPACK_IMPORTED_MODULE_5__[\"default\"],\n    title: \"Buy Games\"\n  }],\n  li: [\"PlayStation Indies\", \"PS4 games on PS5\", \"Free to Play\", \"Deals & offers\"]\n}, {\n  name: \"Hardware\",\n  cards: [{\n    img: _assets_ps5_logo_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n    title: \"PS5\"\n  }, {\n    img: _assets_ps4_logo_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n    title: \"PS4\"\n  }, {\n    img: _assets_ps4pro_logo_png__WEBPACK_IMPORTED_MODULE_6__[\"default\"],\n    title: \"PS4 Pro\"\n  }, {\n    img: _assets_psvr_logo_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n    title: \"PS VR\"\n  }],\n  li: [\"DualSense wireless controller\", \"Pulse 3D headset\", \"PS5 accessories\", \"PlayStation VR2\", \"PS4 accessories\"]\n}, {\n  name: \"Services\",\n  cards: [{\n    img: _assets_psplus_logo_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n    title: \"PS Plus\"\n  }, {\n    img: _assets_psnow_logo_png__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n    title: \"PS Now\"\n  }],\n  li: [\"PS5 entertainment\", \"PS4 entertainment\"]\n}, {\n  name: \"News\",\n  cards: [{\n    img: _assets_ps_blog_png__WEBPACK_IMPORTED_MODULE_7__[\"default\"],\n    title: \"PS Blog\"\n  }, {\n    img: _assets_ps_calendar_png__WEBPACK_IMPORTED_MODULE_8__[\"default\"],\n    title: \"This Month on PlayStation\"\n  }],\n  li: [\"Competition Center\", \"Accessibility\"]\n}, {\n  name: \"Shop\",\n  cards: [{\n    img: _assets_ps4pro_logo_png__WEBPACK_IMPORTED_MODULE_6__[\"default\"],\n    title: \"Hardware and Discs\"\n  }, {\n    img: _assets_buy_games_png__WEBPACK_IMPORTED_MODULE_5__[\"default\"],\n    title: \"Digital Games and Services\"\n  }, {\n    img: _assets_ps_merchandise_png__WEBPACK_IMPORTED_MODULE_9__[\"default\"],\n    title: \"Official Merchandise\"\n  }],\n  li: [\"Buy PS5 games\", \"Buy PS4 games\", \"Buy PlayStation Plus\", \"Buy PS4\", \"Buy PS VR\"]\n}, {\n  name: \"Support\",\n  cards: [{\n    img: _assets_ps_support_png__WEBPACK_IMPORTED_MODULE_10__[\"default\"],\n    title: \"Support\"\n  }, {\n    img: _assets_ps_home_png__WEBPACK_IMPORTED_MODULE_11__[\"default\"],\n    title: \"PSN Status\"\n  }],\n  li: []\n}];\nvar principal_sliders = [{\n  id: 1,\n  banner: _assets_mlb_the_show_22_webp__WEBPACK_IMPORTED_MODULE_12__[\"default\"],\n  logo: _assets_mlb_the_show_22_logo_png__WEBPACK_IMPORTED_MODULE_13__[\"default\"],\n  title: \"Own The Show™\",\n  text: \"Every pitch. Every hit. Every win. Make your mark and Own The Show in MLB® The Show™ 22, out now on PS4 & PS5\",\n  top: \"30%\"\n}, {\n  id: 2,\n  banner: _assets_lego_webp__WEBPACK_IMPORTED_MODULE_14__[\"default\"],\n  logo: _assets_lego_logo_png__WEBPACK_IMPORTED_MODULE_15__[\"default\"],\n  title: \"All nine films. One new game.\",\n  text: \"Play through all nine Star Wars saga films in a brand-new LEGO video game unlike any other, out now on PS4 & PS5\",\n  top: \"25%\"\n}, {\n  id: 3,\n  banner: _assets_horizon_jpg__WEBPACK_IMPORTED_MODULE_16__[\"default\"],\n  logo: _assets_horizon_logo_png__WEBPACK_IMPORTED_MODULE_17__[\"default\"],\n  title: \"Rise above our ruin\",\n  text: \"Join Aloy as she braves the Forbidden West - a majestic but dangerous frontier that conceals mysterious new threats.\",\n  top: \"25%\"\n}, {\n  id: 4,\n  banner: _assets_gran_turismo_jpg__WEBPACK_IMPORTED_MODULE_18__[\"default\"],\n  logo: _assets_gran_turismo_logo_png__WEBPACK_IMPORTED_MODULE_19__[\"default\"],\n  title: \"Find your line\",\n  text: \"Gran Turismo 7 builds on generations of racing sim experience to bring you the best features from the history of the franchise.\",\n  top: \"10%\"\n}, {\n  id: 5,\n  banner: _assets_ghostwire_webp__WEBPACK_IMPORTED_MODULE_20__[\"default\"],\n  logo: _assets_ghostwire_logo_png__WEBPACK_IMPORTED_MODULE_21__[\"default\"],\n  title: \"Face the unknown\",\n  text: \"Experience the mysterious events within Tango Gameworks’ highly anticipated action-adventure game, Ghostwire: Tokyo, out now on PS5\",\n  top: \"30%\"\n}];\nvar accesories_slider = [{\n  id: 1,\n  banner: _assets_ps5_back_png__WEBPACK_IMPORTED_MODULE_22__[\"default\"],\n  title: \"PlayStation 5 Console\",\n  text: \"Experience an all-new generation of incredible PlayStation games.\"\n}, {\n  id: 2,\n  banner: _assets_dualsense_back_jpg__WEBPACK_IMPORTED_MODULE_23__[\"default\"],\n  title: \"DualSense™ Wireless Controller\",\n  text: \"Immerse yourself in the gaming experience with a controller the supports responsive haptic feedback and dynamic trigger effects.\"\n}, {\n  id: 3,\n  banner: _assets_pulse3d_back_jpg__WEBPACK_IMPORTED_MODULE_24__[\"default\"],\n  title: \"PULSE 3D™ Wireless Headset\",\n  text: \"Enjoy a seamless wireless experience with a headset fine-tuned for 3D Audio on PS5 consoles.\"\n}, {\n  id: 4,\n  banner: _assets_media_remote_back_png__WEBPACK_IMPORTED_MODULE_25__[\"default\"],\n  title: \"Media Remote\",\n  text: \"Conveniently control movies, streaming services and more on your PS5 console with an intuitive layout.\"\n}, {\n  id: 5,\n  banner: _assets_hd_camera_back_jpg__WEBPACK_IMPORTED_MODULE_26__[\"default\"],\n  title: \"HD Camera\",\n  text: \"Add yourself to your gameplay videos and broadcasts with smooth, sharp, full-HD capture.\"\n}, {\n  id: 6,\n  banner: _assets_ps5_covers_back_jpg__WEBPACK_IMPORTED_MODULE_27__[\"default\"],\n  title: \"PS5 Console Covers\",\n  text: \"Personalise your PlayStation 5 or PlayStation 5 Digital Edition console with a vibrant array of new colour options.*\"\n}];\nvar products1 = [[{\n  name: \"Horizon Forbiden West\",\n  img: _assets_horizon_sm_jpg__WEBPACK_IMPORTED_MODULE_28__[\"default\"]\n}, {\n  name: \"Elden Ring\",\n  img: _assets_elden_sm_jpg__WEBPACK_IMPORTED_MODULE_31__[\"default\"]\n}, {\n  name: \"Uncharted: Legacy of Thieves Collection\",\n  img: _assets_uncharted_sm_jpg__WEBPACK_IMPORTED_MODULE_51__[\"default\"]\n}, {\n  name: \"Tiny Tina's Woderlands\",\n  img: _assets_tiny_sm_jpg__WEBPACK_IMPORTED_MODULE_48__[\"default\"]\n}], [{\n  name: \"Sifu\",\n  img: _assets_sifu_sm_jpg__WEBPACK_IMPORTED_MODULE_44__[\"default\"]\n}, {\n  name: \"Dying Light 2 Stay Human\",\n  img: _assets_dying_sm_jpg__WEBPACK_IMPORTED_MODULE_30__[\"default\"]\n}, {\n  name: \"LEGO Star Wars: The Skywalker Saga\",\n  img: _assets_lego_sm_jpg__WEBPACK_IMPORTED_MODULE_39__[\"default\"]\n}, {\n  name: \"EA SPORTS FIFA 22\",\n  img: _assets_fifa_sm_jpg__WEBPACK_IMPORTED_MODULE_32__[\"default\"]\n}], [{\n  name: \"Ghostwire: Tokyo\",\n  img: _assets_ghostwire_webp__WEBPACK_IMPORTED_MODULE_20__[\"default\"]\n}, {\n  name: \"Gran Turismo 7\",\n  img: _assets_gran_sm_jpg__WEBPACK_IMPORTED_MODULE_37__[\"default\"]\n}, {\n  name: \"DEATHLOOP\",\n  img: _assets_deathloop_sm_jpg__WEBPACK_IMPORTED_MODULE_29__[\"default\"]\n}, {\n  name: \"Stranger of Paradise Final Fantasy Origin\",\n  img: _assets_stranger_sm_jpg__WEBPACK_IMPORTED_MODULE_45__[\"default\"]\n}]];\nvar products2 = [[{\n  name: \"Suicide Squad: Kill the Justice League\",\n  img: _assets_suicide_sm_jpg__WEBPACK_IMPORTED_MODULE_47__[\"default\"]\n}, {\n  name: \"God of War Ragnarok\",\n  img: _assets_god_sm_jpg__WEBPACK_IMPORTED_MODULE_35__[\"default\"]\n}, {\n  name: \"Hogwarts Legacy\",\n  img: _assets_hogwarts_sm_jpg__WEBPACK_IMPORTED_MODULE_38__[\"default\"]\n}, {\n  name: \"Trek to Yomi\",\n  img: _assets_trek_sm_jpg__WEBPACK_IMPORTED_MODULE_50__[\"default\"]\n}], [{\n  name: \"Teenage Mutant Ninja Turtles> Shredder's Revenge\",\n  img: _assets_tmnt_sm_jpg__WEBPACK_IMPORTED_MODULE_49__[\"default\"]\n}, {\n  name: \"OXENFREE II: Lost Signals\",\n  img: _assets_oxenfree_sm_jpg__WEBPACK_IMPORTED_MODULE_41__[\"default\"]\n}, {\n  name: \"Saint Row\",\n  img: _assets_saints_sm_jpg__WEBPACK_IMPORTED_MODULE_42__[\"default\"]\n}, {\n  name: \"Gotham Knights\",\n  img: _assets_gotham_sm_jpg__WEBPACK_IMPORTED_MODULE_36__[\"default\"]\n}], [{\n  name: \"Forspoken\",\n  img: _assets_forspoken_sm_jpg__WEBPACK_IMPORTED_MODULE_33__[\"default\"]\n}, {\n  name: \"Salt and Scrifice\",\n  img: _assets_salt_sm_jpg__WEBPACK_IMPORTED_MODULE_43__[\"default\"]\n}, {\n  name: \"Little Devil Inside\",\n  img: _assets_little_sm_jpg__WEBPACK_IMPORTED_MODULE_40__[\"default\"]\n}, {\n  name: \"Stray\",\n  img: _assets_stray_sm_jpg__WEBPACK_IMPORTED_MODULE_46__[\"default\"]\n}]];\n\n//# sourceURL=webpack://proyecto1/./src/components/utilities/constants.js?");
 
 /***/ }),
 
@@ -152,6 +163,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/deathloop-sm.jpg":
+/*!*************************************!*\
+  !*** ./src/assets/deathloop-sm.jpg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/e95dbb0140ecfd4437507000868ab91e.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/deathloop-sm.jpg?");
+
+/***/ }),
+
 /***/ "./src/assets/dualsense.png":
 /*!**********************************!*\
   !*** ./src/assets/dualsense.png ***!
@@ -174,6 +196,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/dying-sm.jpg":
+/*!*********************************!*\
+  !*** ./src/assets/dying-sm.jpg ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/b87365022ed6c69920f334d0c0252aa8.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/dying-sm.jpg?");
+
+/***/ }),
+
 /***/ "./src/assets/elden-ring.webp":
 /*!************************************!*\
   !*** ./src/assets/elden-ring.webp ***!
@@ -182,6 +215,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/2eb9f61f29cb5d2fe082f5a4228bad31.webp\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/elden-ring.webp?");
+
+/***/ }),
+
+/***/ "./src/assets/elden-sm.jpg":
+/*!*********************************!*\
+  !*** ./src/assets/elden-sm.jpg ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/aaa8c12e0c5fb4555f45d006a1352505.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/elden-sm.jpg?");
 
 /***/ }),
 
@@ -196,6 +240,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/fifa-sm.jpg":
+/*!********************************!*\
+  !*** ./src/assets/fifa-sm.jpg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/479cd8218df4d95fe6d23f67def8631c.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/fifa-sm.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/forspoken-sm.jpg":
+/*!*************************************!*\
+  !*** ./src/assets/forspoken-sm.jpg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/77143c4a3927052a63fe742711ecdee0.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/forspoken-sm.jpg?");
+
+/***/ }),
+
 /***/ "./src/assets/ghostwire-logo.png":
 /*!***************************************!*\
   !*** ./src/assets/ghostwire-logo.png ***!
@@ -204,6 +270,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/38d2783209f22ebe684bdf9db3262b08.png\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/ghostwire-logo.png?");
+
+/***/ }),
+
+/***/ "./src/assets/ghostwire-sm.jpg":
+/*!*************************************!*\
+  !*** ./src/assets/ghostwire-sm.jpg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/1ecf218cf512e22d3abefe3f7c3f5fca.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/ghostwire-sm.jpg?");
 
 /***/ }),
 
@@ -226,6 +303,39 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/b0d7b60ca3f54d31477249c238e3e5cf.webp\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/ghostwire.webp?");
+
+/***/ }),
+
+/***/ "./src/assets/god-sm.jpg":
+/*!*******************************!*\
+  !*** ./src/assets/god-sm.jpg ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/8029f51d3e34784ab048daf029dfb032.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/god-sm.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/gotham-sm.jpg":
+/*!**********************************!*\
+  !*** ./src/assets/gotham-sm.jpg ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/8fe6ad0cb3fe6cfa4979706ee8738a4f.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/gotham-sm.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/gran-sm.jpg":
+/*!********************************!*\
+  !*** ./src/assets/gran-sm.jpg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/55261520c9fbe4d7c54cdc1a08efe9d9.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/gran-sm.jpg?");
 
 /***/ }),
 
@@ -284,6 +394,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/hogwarts-sm.jpg":
+/*!************************************!*\
+  !*** ./src/assets/hogwarts-sm.jpg ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/031aa568ab8d7d43c4c4c056ae33edec.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/hogwarts-sm.jpg?");
+
+/***/ }),
+
 /***/ "./src/assets/horizon-forbidden-west-cover.jpg":
 /*!*****************************************************!*\
   !*** ./src/assets/horizon-forbidden-west-cover.jpg ***!
@@ -303,6 +424,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/998bfa783715d9889e1f38822f1637ea.png\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/horizon-logo.png?");
+
+/***/ }),
+
+/***/ "./src/assets/horizon-sm.jpg":
+/*!***********************************!*\
+  !*** ./src/assets/horizon-sm.jpg ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/23c1cd6451de0493d4e65d2bc6148b99.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/horizon-sm.jpg?");
 
 /***/ }),
 
@@ -328,6 +460,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/lego-sm.jpg":
+/*!********************************!*\
+  !*** ./src/assets/lego-sm.jpg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/4f2b093f5c753d9442e63690e6f9be92.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/lego-sm.jpg?");
+
+/***/ }),
+
 /***/ "./src/assets/lego-star-wars-cover.jpg":
 /*!*********************************************!*\
   !*** ./src/assets/lego-star-wars-cover.jpg ***!
@@ -347,6 +490,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/bc4fbbbeb43d9573a01fececec39edd3.webp\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/lego.webp?");
+
+/***/ }),
+
+/***/ "./src/assets/little-sm.jpg":
+/*!**********************************!*\
+  !*** ./src/assets/little-sm.jpg ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/6d20e94998d1288d8726cd12d27eed6a.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/little-sm.jpg?");
 
 /***/ }),
 
@@ -413,6 +567,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/51fca5258a025a211fa10620d008e8eb.webp\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/mlb-the-show-22.webp?");
+
+/***/ }),
+
+/***/ "./src/assets/oxenfree-sm.jpg":
+/*!************************************!*\
+  !*** ./src/assets/oxenfree-sm.jpg ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/065cb21cdfd76142efda78456fca1314.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/oxenfree-sm.jpg?");
 
 /***/ }),
 
@@ -625,6 +790,39 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/saints-sm.jpg":
+/*!**********************************!*\
+  !*** ./src/assets/saints-sm.jpg ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/7d3c2becdf23dd1553d30d13f26d8b52.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/saints-sm.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/salt-sm.jpg":
+/*!********************************!*\
+  !*** ./src/assets/salt-sm.jpg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/049c4b5ea746d674bd36114a3362e768.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/salt-sm.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/sifu-sm.jpg":
+/*!********************************!*\
+  !*** ./src/assets/sifu-sm.jpg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/dbd135478ca1e9a4586eb681742c4b2c.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/sifu-sm.jpg?");
+
+/***/ }),
+
 /***/ "./src/assets/sony_logo.svg":
 /*!**********************************!*\
   !*** ./src/assets/sony_logo.svg ***!
@@ -633,6 +831,83 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/7586f92219cdfce14a43a842174a0127.svg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/sony_logo.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/stranger-sm.jpg":
+/*!************************************!*\
+  !*** ./src/assets/stranger-sm.jpg ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/3f2196d3efa1d7e7b91b4504c406ecb0.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/stranger-sm.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/stray-sm.jpg":
+/*!*********************************!*\
+  !*** ./src/assets/stray-sm.jpg ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/75815dbf5d75e3c91278c3939e3da53c.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/stray-sm.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/suicide-sm.jpg":
+/*!***********************************!*\
+  !*** ./src/assets/suicide-sm.jpg ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/00fc6c0b2e210292cbdf29ff3be00e47.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/suicide-sm.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/tiny-sm.jpg":
+/*!********************************!*\
+  !*** ./src/assets/tiny-sm.jpg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/730f26cae0e414b59f6e8602a1d3223a.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/tiny-sm.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/tmnt-sm.jpg":
+/*!********************************!*\
+  !*** ./src/assets/tmnt-sm.jpg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/b29dd88e39b4bbe27a420b420416662c.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/tmnt-sm.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/trek-sm.jpg":
+/*!********************************!*\
+  !*** ./src/assets/trek-sm.jpg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/2be96063fbfdd7cc70fe38fdd8828311.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/trek-sm.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/uncharted-sm.jpg":
+/*!*************************************!*\
+  !*** ./src/assets/uncharted-sm.jpg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/8661a0b85c546ecbfdf6a2a4a62dbfef.jpg\");\n\n//# sourceURL=webpack://proyecto1/./src/assets/uncharted-sm.jpg?");
 
 /***/ }),
 
@@ -699,6 +974,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://proyecto1/./src/components/principalSlider/PrincipalSlider.scss?");
+
+/***/ }),
+
+/***/ "./src/components/products/products.scss":
+/*!***********************************************!*\
+  !*** ./src/components/products/products.scss ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://proyecto1/./src/components/products/products.scss?");
 
 /***/ }),
 

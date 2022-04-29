@@ -29,6 +29,31 @@ import media_remote from "../../assets/media_remote_back.png";
 import hd_camera_back from "../../assets/hd_camera_back.jpg";
 import ps5_covers_back from "../../assets/ps5_covers_back.jpg";
 
+import horizon_sm from "../../assets/horizon-sm.jpg";
+import deathloop_sm from "../../assets/deathloop-sm.jpg";
+import dying_sm from "../../assets/dying-sm.jpg";
+import elden_sm from "../../assets/elden-sm.jpg";
+import fifa_sm from "../../assets/fifa-sm.jpg";
+import forspoken_sm from "../../assets/forspoken-sm.jpg";
+import ghostwire_sm from "../../assets/ghostwire-sm.jpg";
+import god_sm from "../../assets/god-sm.jpg";
+import gotham_sm from "../../assets/gotham-sm.jpg";
+import gran_sm from "../../assets/gran-sm.jpg";
+import hogwarts_sm from "../../assets/hogwarts-sm.jpg";
+import lego_sm from "../../assets/lego-sm.jpg";
+import little_sm from "../../assets/little-sm.jpg";
+import oxenfree_sm from "../../assets/oxenfree-sm.jpg";
+import saints_sm from "../../assets/saints-sm.jpg";
+import salt_sm from "../../assets/salt-sm.jpg";
+import sifu_sm from "../../assets/sifu-sm.jpg";
+import stranger_sm from "../../assets/stranger-sm.jpg";
+import stray_sm from "../../assets/stray-sm.jpg";
+import suicide_sm from "../../assets/suicide-sm.jpg";
+import tiny_sm from "../../assets/tiny-sm.jpg";
+import tmnt_sm from "../../assets/tmnt-sm.jpg";
+import trek_sm from "../../assets/trek-sm.jpg";
+import uncharted_sm from "../../assets/uncharted-sm.jpg";
+
 export const header_options = [
   {
     name: "Games",
@@ -241,4 +266,118 @@ export const accesories_slider = [
     title: "PS5 Console Covers",
     text: "Personalise your PlayStation 5 or PlayStation 5 Digital Edition console with a vibrant array of new colour options.*",
   },
+];
+
+export const products1 = [
+  [
+    {
+      name: "Horizon Forbiden West",
+      img: horizon_sm,
+    },
+    {
+      name: "Elden Ring",
+      img: elden_sm,
+    },
+    {
+      name: "Uncharted: Legacy of Thieves Collection",
+      img: uncharted_sm,
+    },
+    {
+      name: "Tiny Tina's Woderlands",
+      img: tiny_sm,
+    },
+  ],
+  [
+    {
+      name: "Sifu",
+      img: sifu_sm,
+    },
+    {
+      name: "Dying Light 2 Stay Human",
+      img: dying_sm,
+    },
+    {
+      name: "LEGO Star Wars: The Skywalker Saga",
+      img: lego_sm,
+    },
+    {
+      name: "EA SPORTS FIFA 22",
+      img: fifa_sm,
+    },
+  ],
+  [
+    {
+      name: "Ghostwire: Tokyo",
+      img: ghostwire,
+    },
+    {
+      name: "Gran Turismo 7",
+      img: gran_sm,
+    },
+    {
+      name: "DEATHLOOP",
+      img: deathloop_sm,
+    },
+    {
+      name: "Stranger of Paradise Final Fantasy Origin",
+      img: stranger_sm,
+    },
+  ],
+];
+
+export const products2 = [
+  [
+    {
+      name: "Suicide Squad: Kill the Justice League",
+      img: suicide_sm,
+    },
+    {
+      name: "God of War Ragnarok",
+      img: god_sm,
+    },
+    {
+      name: "Hogwarts Legacy",
+      img: hogwarts_sm,
+    },
+    {
+      name: "Trek to Yomi",
+      img: trek_sm,
+    },
+  ],
+  [
+    {
+      name: "Teenage Mutant Ninja Turtles> Shredder's Revenge",
+      img: tmnt_sm,
+    },
+    {
+      name: "OXENFREE II: Lost Signals",
+      img: oxenfree_sm,
+    },
+    {
+      name: "Saint Row",
+      img: saints_sm,
+    },
+    {
+      name: "Gotham Knights",
+      img: gotham_sm,
+    },
+  ],
+  [
+    {
+      name: "Forspoken",
+      img: forspoken_sm,
+    },
+    {
+      name: "Salt and Scrifice",
+      img: salt_sm,
+    },
+    {
+      name: "Little Devil Inside",
+      img: little_sm,
+    },
+    {
+      name: "Stray",
+      img: stray_sm,
+    },
+  ],
 ];

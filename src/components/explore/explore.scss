@@ -1,0 +1,28 @@
+.back--white--2 {
+    background-color: white;
+}
+
+.center--1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.center--2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p--explore {
+    text-align: center;
+    font-size: 20px;
+    width: 70%;
+}
+
+.card--size--3 {
+    width: 256px;
+    height: 340px;
+    margin: 30px 45px;
+    flex-direction: column;
+}

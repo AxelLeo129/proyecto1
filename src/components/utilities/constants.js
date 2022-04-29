@@ -54,6 +54,10 @@ import tmnt_sm from "../../assets/tmnt-sm.jpg";
 import trek_sm from "../../assets/trek-sm.jpg";
 import uncharted_sm from "../../assets/uncharted-sm.jpg";
 
+import vr_back from "../../assets/vr-back.jpg";
+import ps4_back from "../../assets/ps4-back.jpg";
+import dualshock_back from "../../assets/dualshock-back.jpg";
+
 export const header_options = [
   {
     name: "Games",
@@ -380,4 +384,22 @@ export const products2 = [
       img: stray_sm,
     },
   ],
+];
+
+export const explore = [
+  {
+    title: 'PlayStation 4',
+    desc: 'Incredible games live on PS4, with 1TB storage.',
+    img: ps4_back
+  },
+  {
+    title: 'PlayStation VR',
+    desc: 'Over 500 games and experiences and counting. See them all.',
+    img: vr_back
+  },
+  {
+    title: 'Accessories',
+    desc: 'Enhance your PS4 experience with a range of official accessories.',
+    img: dualshock_back
+  }
 ];

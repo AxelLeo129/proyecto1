@@ -90,7 +90,7 @@ const Products = (props) => {
               {products1.map((e, i) => (
                 <div
                   key={i}
-                  className="card--size--1 d-flex align-items-center animate__animated animate__fadeIn"
+                  className="card--size--2 d-flex align-items-center animate__animated animate__fadeIn"
                 >
                   <img
                     src={e.img}

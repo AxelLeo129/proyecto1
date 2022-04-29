@@ -9,6 +9,7 @@ import Month from "./month/month";
 import ElderRing from "./elder-ring/elderRing";
 import Products from "./products/products";
 import { products1, products2 } from "./utilities/constants";
+import Explore from "./explore/explore";
 
 class StartApp extends React.Component {
   render() {
@@ -29,6 +30,7 @@ class StartApp extends React.Component {
           title="Coming soon"
           desc="Amazing new experiences are just around the corner"
         />
+        <Explore />
       </React.Fragment>
     );
   }
